@@ -1,0 +1,10 @@
+# Obsidian
+.obsidian/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Sources brutes — optionnel à versionner selon les cas
+# raw/*.pdf
+# raw/*.docx
