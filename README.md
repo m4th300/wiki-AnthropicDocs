@@ -1,6 +1,6 @@
-# llm-wiki-template
+# wiki-AnthropicDocs
 
-Template pour créer un wiki personnel maintenu par Claude Code (CLI).
+Wiki personnel sur Claude Code et l'Agent SDK, maintenu par Claude Code (CLI).
 
 ## Principe
 
