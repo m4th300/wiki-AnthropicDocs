@@ -1,9 +1,9 @@
 ---
-name: init
-description: Initialise un nouveau wiki depuis le template llm-wiki-template. Déclenché par "/init", "initialise le wiki", "configure le wiki", ou quand l'utilisateur ouvre un repo wiki fraîchement cloné et demande par où commencer. À utiliser obligatoirement avant toute ingestion sur un wiki vierge.
+name: wikinit
+description: Initialise un nouveau wiki depuis le template llm-wiki-template. Déclenché par "/wikinit", "initialise le wiki", "configure le wiki", ou quand l'utilisateur ouvre un repo wiki fraîchement cloné et demande par où commencer. À utiliser obligatoirement avant toute ingestion sur un wiki vierge.
 ---
 
-# /init — Initialisation du wiki
+# /wikinit — Initialisation du wiki
 
 Un wiki vierge cloné depuis le template est générique par construction. Ce skill le transforme en un outil adapté à un domaine précis : il comprend le projet, propose des adaptations structurelles, les valide avec l'utilisateur, puis les implémente. Rien n'est écrit sans validation explicite.
 

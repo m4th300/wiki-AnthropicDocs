@@ -25,6 +25,12 @@ Le wiki grossit par deux chemins :
 
 ```
 wiki/            ← pages maintenues par le LLM (lecture + écriture)
+  concepts/      ← abstract ideas and principles
+  features/      ← specific Claude Code features (status, config, use cases)
+  frameworks/    ← systematic approaches and architectures
+  recipes/       ← concrete, reproducible implementation patterns
+  sources/       ← synthesized ingested documents
+  meta/          ← page templates
 raw/             ← sources brutes (lecture seule — ne jamais modifier)
   assets/        ← images téléchargées localement (liées aux sources)
 .claude/skills/  ← workflows externalisés (ne jamais modifier en session)
@@ -47,6 +53,8 @@ Lire dans cet ordre :
 ---
 
 ## Conventions
+
+**Language** — All wiki pages are written in **English**. Raw source files may be in any language.
 
 **Slugs** — kebab-case, minuscules, sans accents (`e` pour `é/è/ê`, `a` pour `à`, `c` pour `ç`)
 
@@ -93,10 +101,26 @@ Les templates sont dans `wiki/meta/`.
 
 | Type | Dossier | Usage |
 |------|---------|-------|
-| `concept`   | `wiki/concepts/`   | Idée, notion, théorie |
-| `source`    | `wiki/sources/`    | Synthèse d'une source ingérée |
-| `personne`  | `wiki/personnes/`  | Individu (auteur, sujet, collaborateur) |
-| `framework` | `wiki/frameworks/` | Méthode, système, modèle d'analyse |
+| `concept`   | `wiki/concepts/`   | Abstract idea or principle |
+| `feature`   | `wiki/features/`   | Specific Claude Code feature — includes status, version, config syntax, use cases |
+| `framework` | `wiki/frameworks/` | Systematic approach or architecture |
+| `recipe`    | `wiki/recipes/`    | Concrete, step-by-step implementation pattern |
+| `source`    | `wiki/sources/`    | Synthesis of an ingested document |
+
+### Tags taxonomy
+
+```
+domain/claude-code       — Claude Code feature or concept
+domain/agent-sdk         — Agent SDK (custom agent development)
+
+theme/automation         — headless mode, routines, dynamic workflows
+theme/security           — permissions, sandboxing, prompt injection
+theme/extensions         — hooks, MCP, skills, plugins
+theme/integrations       — GitHub, Bedrock, VS Code, Slack, etc.
+theme/cost-optimization  — token management, context, model selection
+
+status/experimental      — research preview or experimental feature
+```
 
 ---
 
